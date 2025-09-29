@@ -1,124 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f8f9fc;
-            color: #333;
-        }
-
-        header {
-            background: #2c3e50;
-            color: white;
-            padding: 1rem 2rem;
-            text-align: center;
-        }
-
-        nav {
-            text-align: center;
-            background: #34495e;
-            padding: 0.5rem;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 1rem;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        h1 {
-            text-align: center;
-            margin-top: 2rem;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            max-width: 1000px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-
-        .project-card {
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            text-align: center;
-            padding: 1rem;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-            cursor: pointer;
-            text-decoration: none;
-            color: inherit;
-        }
-
-        .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-        }
-
-        .project-card img {
-            max-width: 100%;
-            border-radius: 8px;
-            margin-bottom: 1rem;
-        }
-
-        footer {
-            text-align: center;
-            padding: 1rem;
-            margin-top: 3rem;
-            background: #2c3e50;
-            color: white;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Noah Sundby</title>
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
 
-    <header>
-        <h1>My Projects</h1>
-    </header>
-
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="projects.html" style="text-decoration: underline;">Projects</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-
-    <div class="grid">
-        <a href="project1.html" class="project-card">
-            <img src="images/project1.jpg" alt="Project 1">
-            <h3>Project One</h3>
-            <p>Short description of project one.</p>
-        </a>
-
-        <a href="project2.html" class="project-card">
-            <img src="images/project2.jpg" alt="Project 2">
-            <h3>Project Two</h3>
-            <p>Short description of project two.</p>
-        </a>
-
-        <a href="https://github.com/yourusername/someproject" target="_blank" class="project-card">
-            <img src="images/project3.jpg" alt="Project 3">
-            <h3>External Project</h3>
-            <p>Links directly to a GitHub repository.</p>
-        </a>
+  <!-- Header / Navbar -->
+  <header>
+    <div class="container">
+      <h1>Noah Sundby</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <footer>
-        &copy; 2025 Your Name | Built with ❤️
-    </footer>
+  <!-- Main Content -->
+  <main class="container">
+    <h2>My Projects</h2>
+    <p>Explore some of the work I’ve done in GIS and related fields:</p>
+
+    <div class="project-grid">
+      <div class="project-card">
+        <a href="project1.html">
+          <img src="assets/images/project1.jpg" alt="Project 1">
+          <h3>Project Title 1</h3>
+          <p>Short description of this project.</p>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <a href="project2.html">
+          <img src="assets/images/project2.jpg" alt="Project 2">
+          <h3>Project Title 2</h3>
+          <p>Short description of this project.</p>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <a href="project3.html">
+          <img src="assets/images/project3.jpg" alt="Project 3">
+          <h3>Project Title 3</h3>
+          <p>Short description of this project.</p>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Noah Sundby | All Rights Reserved</p>
+  </footer>
 
 </body>
 </html>
